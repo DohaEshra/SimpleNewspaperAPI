@@ -66,7 +66,6 @@ namespace Newspaper.Controllers
             }
             else
             {
-                // A.IsActive == false ? A.IsActive = true : A.IsActive = false;
                 A.IsActive = A.IsActive ? false : true;
                 await _context.SaveChangesAsync();
                 return Ok(A);
